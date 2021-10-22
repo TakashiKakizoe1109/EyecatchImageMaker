@@ -1,0 +1,248 @@
+.dark-mode .preloader {
+    background-color: rgba(52,58,63,1) !important;
+    color: rgba(0,255,35,1) !important;
+}
+
+.loader {
+    color: grey;
+    font-family: sans-serif;
+    height: 10vh;
+    left: 50%;
+    overflow-x: hidden;
+    padding-top: 7vh;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    color: rgba(0,255,35,1) !important;
+}
+
+.loader:before {
+    animation: left-to-right 3s alternate infinite linear;
+    background-image: linear-gradient(to right, transparent, rgba(0,255,35,1), transparent);
+    content: "";
+    height: 5vh;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/*font-family: 'Dela Gothic One', cursive;*/
+/*font-family: 'DotGothic16', sans-serif;*/
+/*font-family: 'Hachi Maru Pop', cursive;*/
+/*font-family: 'Hina Mincho', serif;*/
+/*font-family: 'Kaisei Decol', serif;*/
+/*font-family: 'Kaisei HarunoUmi', serif;*/
+/*font-family: 'Kaisei Opti', serif;*/
+/*font-family: 'Kaisei Tokumin', serif;*/
+/*font-family: 'Kiwi Maru', serif;*/
+/*font-family: 'Klee One', cursive;*/
+/*font-family: 'Kosugi Maru', sans-serif;*/
+/*font-family: 'M PLUS 1p', sans-serif;*/
+/*font-family: 'New Tegomin', serif;*/
+/*font-family: 'Noto Sans JP', sans-serif;*/
+/*font-family: 'Otomanopee One', sans-serif;*/
+/*font-family: 'Palette Mosaic', cursive;*/
+/*font-family: 'Potta One', cursive;*/
+/*font-family: 'Rampart One', cursive;*/
+/*font-family: 'Reggae One', cursive;*/
+/*font-family: 'RocknRoll One', sans-serif;*/
+/*font-family: 'Sawarabi Mincho', sans-serif;*/
+/*font-family: 'Shippori Mincho', serif;*/
+/*font-family: 'Stick', sans-serif;*/
+/*font-family: 'Train One', cursive;*/
+/*font-family: 'Yomogi', cursive;*/
+/*font-family: 'Yusei Magic', sans-serif;*/
+
+.ecm-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#js-image-wrapper {
+    position: relative;
+    width: 1200px;
+    height: 630px;
+    min-width: 1200px;
+    min-height: 630px;
+    overflow: hidden;
+}
+
+#js-image-wrapper img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#js-image-wrapper.--dragover {
+    border: 10px solid #FFFFFF;
+}
+
+.cover-shadow {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    height: 50%;
+    z-index: 100;
+    background: rgba(255, 255, 255, .45);
+    color: #FFF;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.cover-shadow .cover-text {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 80px;
+    line-height: 120px;
+    padding: 40px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+#select2-js-fontFamily-results li:nth-child(1) {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(2) {
+    font-family: 'Dela Gothic One', cursive;
+}
+
+#select2-js-fontFamily-results li:nth-child(3) {
+    font-family: 'DotGothic16', sans-serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(4) {
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+#select2-js-fontFamily-results li:nth-child(5) {
+    font-family: 'Hina Mincho', serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(6) {
+    font-family: 'Kaisei Decol', serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(7) {
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(8) {
+    font-family: 'Kaisei Opti', serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(9) {
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(10) {
+    font-family: 'Kiwi Maru', serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(11) {
+    font-family: 'Klee One', cursive;
+}
+
+#select2-js-fontFamily-results li:nth-child(12) {
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(13) {
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(14) {
+    font-family: 'New Tegomin', serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(15) {
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(16) {
+    font-family: 'Palette Mosaic', cursive;
+}
+
+#select2-js-fontFamily-results li:nth-child(17) {
+    font-family: 'Potta One', cursive;
+}
+
+#select2-js-fontFamily-results li:nth-child(18) {
+    font-family: 'Rampart One', cursive;
+}
+
+#select2-js-fontFamily-results li:nth-child(19) {
+    font-family: 'Reggae One', cursive;
+}
+
+#select2-js-fontFamily-results li:nth-child(20) {
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(21) {
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(22) {
+    font-family: 'Shippori Mincho', serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(23) {
+    font-family: 'Stick', sans-serif;
+}
+
+#select2-js-fontFamily-results li:nth-child(24) {
+    font-family: 'Train One', cursive;
+}
+
+#select2-js-fontFamily-results li:nth-child(25) {
+    font-family: 'Yomogi', cursive;
+}
+
+#select2-js-fontFamily-results li:nth-child(26) {
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #3f474e;
+    border: 1px solid #56606a;
+    color: #fff;
+    border-radius: .25rem;
+    height: 38px;
+    width: calc(100% - 8px);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #FFF;
+}
+
+.select2-selection__arrow {
+    display: none;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: #3f474e !important;
+}

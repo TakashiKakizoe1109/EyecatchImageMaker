@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eyecatch Image Maker</title>
+    <meta property="og:url" content="https://takashikakizoe1109.github.io/eyecatch-image-maker/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Eyecatch Image Maker"/>
+    <meta property="og:description" content="Easily create cumbersome Eye Catch Images or images with text online."/>
+    <meta property="og:image" content="https://takashikakizoe1109.github.io/eyecatch-image-maker/assets/img/og.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Hachi+Maru+Pop&family=Hina+Mincho&family=Kaisei+Decol:wght@400;500;700&family=Kaisei+HarunoUmi:wght@400;500;700&family=Kaisei+Opti:wght@400;500;700&family=Kaisei+Tokumin:wght@400;500;700;800&family=Kiwi+Maru:wght@300;400;500&family=Klee+One:wght@400;600&family=Kosugi+Maru&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=New+Tegomin&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Otomanopee+One&family=Palette+Mosaic&family=Potta+One&family=Rampart+One&family=Reggae+One&family=RocknRoll+One&family=Sawarabi+Mincho&family=Shippori+Mincho:wght@400;500;600;700;800&family=Stick&family=Train+One&family=Yomogi&family=Yusei+Magic&display=swap"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <link href="assets/css/style.min.css" rel="stylesheet"/>
+</head>
+<body class="sidebar-mini dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<div class="wrapper">
+
+    <div class="preloader flex-column justify-content-center align-items-center">
+        <div class="loader">Loading...</div>
+    </div>
+
+    <nav class="main-header navbar navbar-expand navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="javascript:void(0);" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/TakashiKakizoe1109/eyecatch-image-maker">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-widget="fullscreen" href="javascript:void(0);" role="button">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <a href="." class="brand-link">
+            <span class="brand-text font-weight-light"><small>Eyecatch Image Maker</small></span>
+        </a>
+        <div class="sidebar">
+            <div class="form-group mt-2">
+                <label for="js-coverSize">Cover Size</label><input type="number" id="js-coverSize" class="form-control form-control-sidebar" value="50" min="0" max="100">
+            </div>
+            <div class="form-group mt-2">
+                <label for="js-blurStrength">Cover Blur Strength</label><input type="number" id="js-blurStrength" class="form-control form-control-sidebar" value="3" min="0">
+            </div>
+            <div class="form-group">
+                <label for="js-backgroundColor">Cover Background Color</label><input type="text" id="js-backgroundColor" class="form-control form-control-sidebar" value="rgba(255,255,255,.45)"
+                                                                                     data-jscolor="{preset:'myPreset'}">
+            </div>
+            <div class="form-group">
+                <label for="js-fontFamily">Font Family</label>
+                <select id="js-fontFamily" class="form-control form-control-sidebar">
+                    <option value="'Noto Sans JP', sans-serif">Noto Sans JP</option>
+                    <option value="'Dela Gothic One', cursive">Dela Gothic One</option>
+                    <option value="'DotGothic16', sans-serif">DotGothic16</option>
+                    <option value="'Hachi Maru Pop', cursive">Hachi Maru Pop</option>
+                    <option value="'Hina Mincho', serif">Hina Mincho</option>
+                    <option value="'Kaisei Decol', serif">Kaisei Decol</option>
+                    <option value="'Kaisei HarunoUmi', serif">Kaisei HarunoUmi</option>
+                    <option value="'Kaisei Opti', serif">Kaisei Opti</option>
+                    <option value="'Kaisei Tokumin', serif">Kaisei Tokumin</option>
+                    <option value="'Kiwi Maru', serif">Kiwi Maru</option>
+                    <option value="'Klee One', cursive">Klee One</option>
+                    <option value="'Kosugi Maru', sans-serif">Kosugi Maru</option>
+                    <option value="'M PLUS 1p', sans-serif">M PLUS 1p</option>
+                    <option value="'New Tegomin', serif">New Tegomin</option>
+                    <option value="'Otomanopee One', sans-serif">Otomanopee One</option>
+                    <option value="'Palette Mosaic', cursive">Palette Mosaic</option>
+                    <option value="'Potta One', cursive">Potta One</option>
+                    <option value="'Rampart One', cursive">Rampart One</option>
+                    <option value="'Reggae One', cursive">Reggae One</option>
+                    <option value="'RocknRoll One', sans-serif">RocknRoll One</option>
+                    <option value="'Sawarabi Mincho', sans-serif">Sawarabi Mincho</option>
+                    <option value="'Shippori Mincho', serif">Shippori Mincho</option>
+                    <option value="'Stick', sans-serif">Stick</option>
+                    <option value="'Train One', cursive">Train One</option>
+                    <option value="'Yomogi', cursive">Yomogi</option>
+                    <option value="'Yusei Magic', sans-serif">Yusei Magic</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="js-fontColor">Font Color</label><input type="text" id="js-fontColor" class="form-control form-control-sidebar" value="rgba(255,255,255,1)"
+                                                                   data-jscolor="{preset:'myPreset'}">
+            </div>
+            <div class="form-group">
+                <label for="js-fontSize">Font Size</label><input type="number" id="js-fontSize" class="form-control form-control-sidebar" value="80" min="8">
+            </div>
+            <div class="form-group">
+                <label for="js-fontWeight">Font Weight</label><input type="number" id="js-fontWeight" class="form-control form-control-sidebar" value="700" min="100" step="100" max="900">
+            </div>
+            <div class="form-group">
+                <label for="js-lineHeight">Line Height</label><input type="number" id="js-lineHeight" class="form-control form-control-sidebar" value="120" min="0">
+            </div>
+            <div class="form-group">
+                <label for="js-letterSpacing">Letter Spacing</label><input type="number" id="js-letterSpacing" class="form-control form-control-sidebar" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="js-textShadowStrength">Text Shadow Strength</label><input type="number" id="js-textShadowStrength" class="form-control form-control-sidebar" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="js-textShadowStrength">Text Shadow Length</label><input type="text" id="js-textShadowLength" class="form-control form-control-sidebar" value="0 0 10px">
+            </div>
+            <div class="form-group">
+                <label for="js-textShadowColor">Text Shadow Color</label><input type="text" id="js-textShadowColor" class="form-control form-control-sidebar" value="rgba(255,255,255,1)"
+                                                                                data-jscolor="{preset:'myPreset'}">
+            </div>
+        </div>
+    </aside>
+
+    <div class="content-wrapper" style="transition: all 0s;">
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row justify-content-between">
+                            <div class="col-md-10 col-sm-12 mb-2">
+                                Open DevTools in Chrome and capture node screenshot.
+                                Or download it from the button <strong class="text-danger">( Cover Blur Strength will not be applied to the button )</strong>
+                            </div>
+                            <div class="col-md-2 col-sm-12 mb-2">
+                                <a id="js-download" class="pull-right btn btn-primary btn-sm" href="javascript:void(0);">
+                                    <i class="fa fa-download"></i>&nbsp;Image Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="form-group mb-0">
+                                    <input type="text" class="form-control form-control-border border-width-2" id="js-title" value="Please enter a title & Drag and Drop Image"
+                                           placeholder="Please enter a title">
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="ecm-wrapper">
+                                    <div id="js-image-wrapper" class="ecm-image-wrapper">
+                                        <img src="https://picsum.photos/1200/630?random=1" alt="eye catch image">
+                                        <div id="js-cover" class="cover-shadow">
+                                            <div id="js-cover-title" class="cover-text">Please enter a title & Drag and Drop Image</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2021 <a href="/">Takashi Kakizoe</a></strong> All rights reserved.
+        <div class="float-right d-none d-sm-inline-block"><b>Version</b> 1.0.0</div>
+    </footer>
+    <aside class="control-sidebar control-sidebar-dark"></aside>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.6/jscolor.min.js" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="assets/js/ecim.min.js"></script>
+</body>
+</html>
